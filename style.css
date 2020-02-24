@@ -1,0 +1,356 @@
+body {
+    background-color: rgb(234, 222, 213);
+    font-family: lato;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: rgb(51, 33, 18);
+    font-family: Montserrat; 
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    font-size: 500%;
+}
+
+
+.logo {
+    width: 60%;
+    padding-left: 2.5%;
+    padding-top: 7%;
+    padding-bottom: 1%;
+    margin-left: 20%;
+    z-index: 2;
+}
+
+nav {
+    background: white;
+    padding: 5px 5px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    margin: -0.8%;
+    box-shadow: 1px 0.5px 2px grey;
+}
+
+.nav-links {
+    display: flex;
+    padding-right: 3%;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+li a {
+    padding: 15px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    background-color: #DBDBDB;
+    padding: 15px;
+    box-shadow: 1px 0.5px 2px grey;
+}
+
+.yo {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 45%;
+   box-shadow: 2px 2px 5px grey;
+   border-radius: 50%;
+   margin-top: 5%;
+   z-index: 3;
+}
+
+.block1 {
+    background-color: white;
+    color: white;
+    z-index: 1;
+    padding: 30px;
+    margin: -15% -1% 25% -1%;
+}
+
+.block2 {
+    background-color: #DBDBDB;
+    color: #DBDBDB;
+    z-index: 1;
+    padding: 18px;
+    margin: -26% -1% 16% -1%;
+}
+
+.cv {
+    display: block;
+    margin: 1% auto 1% auto;
+    width: 50%;
+    box-shadow: 2px 2px 3px grey;
+    z-index: 2;
+}
+
+.footer {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 2%;
+}
+
+.linkit a {
+    margin-left: 10%;
+    padding-left: 10%;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+    text-align: center;
+    font-size: 120%;
+}
+
+h2 {
+    font-size: 100%;
+    margin-left: 2%;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+.game {
+    width: 300px;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.ota {
+    width: 300px;
+    box-shadow: 2px 2px 3px grey;
+}
+
+h4 {
+    font-size: 20px; 
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    line-height: 150%;
+    width: 40%;
+    box-shadow: 2px 2px 3px grey;
+}
+
+h6 {
+    font-size: 20px; 
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    line-height: 150%;
+    width: 40%;
+    box-shadow: 2px 2px 3px grey;
+}
+
+
+.laby {
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10% 50px 10% 50px;
+}
+
+.tutaprojekti {
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10% 50px 10% 50px; 
+}
+
+@media (min-width: 1000px)  {
+    .cv {
+        margin-bottom: 10%;
+        margin-top: 12px;
+        width: 50%;
+    }
+}    
+
+
+@media (min-width: 700px) and (max-width: 1000px)  {
+
+    nav {
+        margin: -1%;
+    }
+
+    .cv {
+        width: 80%;
+        margin-bottom: 10%;
+        margin-top: 1%;
+    }
+
+    h1 {
+        font-size: 400%;
+    }
+
+    .block1 {
+        padding: 25px;
+        margin: -15% -1% 25% -1%;
+    }
+    
+    .block2 {
+        padding: 15px;
+        margin: -26% -1% 16% -1%;
+    }
+
+    h6 {
+        font-size: 20px; 
+        width: 35%;
+    }
+
+    h4 {
+        width: 35%;
+        font-size: 20px;
+    }
+
+    .ota {
+        width: 300px;
+    }
+
+    .tutaprojekti {
+        margin-bottom: 10%;
+        margin: 10% 20px 10% 20px;
+    }
+
+    .laby {
+        padding-bottom: 3%;
+        margin: 10% 20px 10% 20px;
+    }
+}
+ 
+
+@media (min-width: 450px) and (max-width: 700px)  {
+    .cv {
+        width: 100%;
+        margin: 0% 0% 5% 0%;
+    }
+
+    nav {
+        margin: -2% -2% 0% -2%;
+    }
+
+    .laby {
+        flex-direction: column;
+    }
+
+    .tutaprojekti {
+        flex-direction: column;
+    }
+
+    .ota {
+        order: -1;
+    }
+
+    h6 {
+        order: 1;
+        width: 80%;
+    }
+
+    h4 {
+        width: 80%;
+        margin: 10% 0% 10% 0%;
+    }
+
+    h1 {
+        font-size: 250%;  
+    }
+
+    p {
+        font-size: 100%; 
+        margin-bottom: 50%;
+    }
+
+    .block1 {
+        padding: 16px;
+        margin: -15% -3% 25% -3%;
+    }
+    
+    .block2 {
+        padding: 10px;
+        margin: -26% -1% 16% -1%;
+    }
+    
+    .logo {
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    a {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 450px)  {
+    .cv {
+        width: 100%;
+        margin: 0% 0% 5% 0%;
+    }
+
+    h1 {
+        font-size: 250%;
+    }
+
+    .logo {
+        width: 30%;
+        margin: 15%;
+    }
+
+    nav {
+        margin: -5% -3% 10% -5%;
+        padding: 0px;
+    }
+
+    a {
+        font-size: 90%;
+    }
+    .yo {
+        width: 60%;
+    }
+
+    .block1 {
+        padding: 20px;
+        margin: -15% -1% 25% -1%;
+    }
+    
+    .block2 {
+        padding: 12px;
+        margin: -35% -1% 16% -1%;
+    }
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
